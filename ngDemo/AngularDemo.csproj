@@ -127,9 +127,6 @@
   <ItemGroup>
     <Content Include="_tests\angular-mocks.js" />
     <Content Include="app\navigation\navigation.js" />
-    <Content Include="app\products\product.html" />
-    <Content Include="app\products\products.html" />
-    <Content Include="app\products\product.js" />
     <Content Include="libs\font-awesome\fonts\fontawesome-webfont.eot" />
     <Content Include="libs\font-awesome\fonts\fontawesome-webfont.ttf" />
     <Content Include="libs\font-awesome\fonts\fontawesome-webfont.woff" />
@@ -193,8 +190,6 @@
     <Content Include="libs\80_Stuff\sb-admin.js" />
     <Content Include="app\login\login.html" />
     <Content Include="app\logo.png" />
-    <Content Include="app\products\products.js" />
-    <Content Include="app\services\productsService.js" />
     <Content Include="_tests\productsServiceTests.js" />
     <Content Include="_tests\productsControllersTests.js" />
     <Content Include="Web.config" />
