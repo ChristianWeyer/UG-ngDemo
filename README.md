@@ -1,4 +1,1 @@
-UGFFMngDemo
-===========
-
-UGFFMngDemo
+Demo für .NET User Group Frankfurt/Main
