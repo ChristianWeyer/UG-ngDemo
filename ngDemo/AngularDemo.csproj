@@ -179,7 +179,7 @@
     <Content Include="libs\font-awesome\css\font-awesome.min.css" />
     <Content Include="libs\font-awesome\fonts\fontawesome-webfont.svg" />
     <Content Include="libs\fonts\glyphicons-halflings-regular.svg" />
-    <None Include="app\index.cshtml" />
+    <None Include="index.cshtml" />
     <Content Include="libs\50_AngularAddOns\angular-route.js" />
     <Content Include="libs\40_Angular\angular.js" />
     <Content Include="libs\20_Bootstrap\bootstrap.js" />
