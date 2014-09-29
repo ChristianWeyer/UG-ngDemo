@@ -1,12 +1,12 @@
-﻿myApp.factory("productsService", function ($http) {
+﻿myApp.factory("productsService", function ($http, configService) {
     var service = {};
 
     service.listProducts = function () {
-        return $http.get(myApp.servicesBaseUrl + "api/products");
+        return $http.get(configService.servicesBaseUrl + "api/products");
     };
 
     service.loadProductDetails = function (id) {
-        return $http.get(myApp.servicesBaseUrl + "api/products?id=" + id);
+        return $http.get(configService.servicesBaseUrl + "api/products?id=" + id);
     };
 
     return service;

@@ -1,7 +1,5 @@
 ﻿var myApp = angular.module("myApp", ["ngRoute", "angular-loading-bar"]);
 
-myApp.servicesBaseUrl = "../";
-
 myApp.config(function ($routeProvider) {
     $routeProvider
         .when("/", { templateUrl: "app/products/products.html", controller: "productsListController" })
