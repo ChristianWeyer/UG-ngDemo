@@ -1,1 +1,1 @@
-Demo für .NET User Group Frankfurt/Main
+Einfache AngularJS Demo für diverse .NET User Group Treffen.
