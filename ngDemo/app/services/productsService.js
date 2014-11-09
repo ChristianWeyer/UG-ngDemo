@@ -1,13 +1,15 @@
-﻿myApp.factory("productsService", function ($http, configService) {
-    var service = {};
+﻿(function() {
+    "use strict";
 
-    service.listProducts = function () {
-        return $http.get(configService.servicesBaseUrl + "api/products");
+    function ProductsService($http, configService) {
+        this.listProducts = function () {
+            return $http.get(configService.servicesBaseUrl + "api/products");
+        };
+
+        this.loadProductDetails = function (id) {
+            return $http.get(configService.servicesBaseUrl + "api/products?id=" + id);
+        };
     };
 
-    service.loadProductDetails = function (id) {
-        return $http.get(configService.servicesBaseUrl + "api/products?id=" + id);
-    };
-
-    return service;
-});
+    app.module.service("productsService", ProductsService);
+})();

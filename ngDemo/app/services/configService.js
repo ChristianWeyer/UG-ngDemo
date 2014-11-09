@@ -5,5 +5,5 @@
         this.servicesBaseUrl = "../";
     };
 
-    app.module.service("configService", ConfigService());
+    app.module.service("configService", ConfigService);
 })();
