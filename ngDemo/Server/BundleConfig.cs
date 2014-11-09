@@ -6,12 +6,12 @@ namespace AngularDemo.Server
     {
         public static void RegisterBundles(BundleCollection bundles)
         {
-            bundles.Add(new StyleBundle("~/app/css")
+            bundles.Add(new Bundle("~/app/css")
                .IncludeDirectory("~/libs", "*.css", true)
                .IncludeDirectory("~/app", "*.css", true)
                );
 
-            bundles.Add(new ScriptBundle("~/app/js")
+            bundles.Add(new Bundle("~/app/js")
                 .IncludeDirectory("~/libs", "*.js", true)
                 .IncludeDirectory("~/app", "*.js", true)
                 );
