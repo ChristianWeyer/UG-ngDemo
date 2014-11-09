@@ -13,5 +13,5 @@
         };
     };
 
-    app.module.controller("productsListController", ProductsListController());
+    app.module.controller("productsListController", ProductsListController);
 })();
