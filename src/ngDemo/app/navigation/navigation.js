@@ -4,7 +4,7 @@
     function NavbarDirective() {
         return {
             restrict: "EA",
-            templateUrl: "app/navigation/nav.html",
+            templateUrl: "./app/navigation/nav.html",
             controller: "navbarController"
         };
     };

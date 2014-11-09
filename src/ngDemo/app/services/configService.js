@@ -2,7 +2,7 @@
     "use strict";
 
     function ConfigService($http) {
-        this.servicesBaseUrl = "../";
+        this.servicesBaseUrl = "";
     };
 
     app.module.service("configService", ConfigService);

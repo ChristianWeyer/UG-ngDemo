@@ -18,7 +18,7 @@ rm -rf bin
 rm -rf obj
 rm index.cshtml
 rm cordova.js
-curl http://panorama.local > index.html
+curl http://windows8vm.local/ngdemo/ > index.html
 
 # make src/hrefs relative by removing leading "/"
 # from <script src="/apps/foo.js"> to <script src="apps/foo.js"> 

@@ -3,8 +3,6 @@
 
     function ProductsListController($scope, productsService, $location) {
 
-        productsService.
-
         productsService.listProducts().then(function (result) {
             $scope.products = result.data;
         }, function (error) {
