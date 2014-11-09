@@ -131,6 +131,7 @@
     <Content Include="app\products\products.js" />
     <Content Include="app\services\configService.js" />
     <Content Include="app\services\productsService.js" />
+    <Content Include="cordova.js" />
     <Content Include="_tests\angular-mocks.js" />
     <Content Include="app\navigation\navigation.js" />
     <Content Include="libs\font-awesome\fonts\fontawesome-webfont.eot" />

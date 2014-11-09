@@ -4,16 +4,16 @@ cd ${DIR} || exit
 
 
 SRC=`pwd`
-SRC=${SRC}/../src/PanoramaWeb
-TARGET=/projects/panorama_build
+SRC=${SRC}/../src/ngDemo
+TARGET=/projects/myApp_build
 mkdir $TARGET 2>/dev/null
 cd $TARGET
 rm -rf out
 mkdir out
 cd out
-cordova create panorama com.thinktecture.panorama TTPanorama --copy-from ${SRC}
+cordova create myApp com.thinktecture.myApp TTmyApp --copy-from ${SRC}
 
-cd panorama/www
+cd myApp/www
 rm -rf bin
 rm -rf obj
 rm index.cshtml
@@ -27,15 +27,7 @@ sed -i -e 's/href=\"\//href=\"/g' index.html
 
 cd ..
 cordova platform add ios
-
+cordova platform add android
 
 #cordova plugin add org.apache.cordova.device
-#cordova plugin add org.apache.cordova.inappbrowser
-#cordova plugin add org.apache.cordova.file
-#cordova plugin add org.apache.cordova.file-transfer
 #cordova plugin add org.apache.cordova.console
-#cordova plugin add https://github.com/thinktecture/WebIntent.git
-#cordova plugin add https://github.com/thinktecture/cordova-plugin-file-opener2.git
-#cordova plugin add https://github.com/driftyco/ionic-plugins-keyboard.git
-
-
