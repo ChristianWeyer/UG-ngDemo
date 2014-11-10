@@ -14,6 +14,7 @@ namespace AngularDemo.Server
             bundles.Add(new Bundle("~/app/js")
                 .IncludeDirectory("~/libs", "*.js", true)
                 .IncludeDirectory("~/app", "*.js", true)
+                .IncludeDirectory("~/appStartup", "*.js", true)
                 );
         }
     }
