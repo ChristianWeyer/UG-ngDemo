@@ -2,6 +2,8 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd ${DIR} || exit
 
+git pull https://github.com/ChristianWeyer/UG-ngDemo
+
 SRC=`pwd`
 SRC=${SRC}/../src/ngDemo
 rm -rf out
@@ -30,4 +32,4 @@ cordova platform add ios
 cordova platform add android
 cordova platform add windows
 
-cordova plugin add org.apache.cordova.statusbar
+#cordova plugin add org.apache.cordova.statusbar
