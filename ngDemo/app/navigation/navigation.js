@@ -1,24 +1,30 @@
-﻿(function() {
+﻿(function () {
     "use strict";
 
     function NavbarDirective() {
         return {
-            restrict: "EA",
-            templateUrl: "app/navigation/nav.html",
-            controller: "navbarController"
+            restrict: "E",
+            templateUrl: "./app/navigation/nav.html",
+            link: function (scope, elem, attrs) {
+                // TODO: use elem.find('.side-collapse') ...
+                $(window).bind("resize", function () {
+                    collapse();
+                });
+
+                collapse();
+            }
         };
     };
 
-    app.module.directive("ttNavbar", NavbarDirective);
-})();
+    function collapse() {
+        var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 
-
-(function() {
-    "use strict";
-
-    function NavbarController() {
-        
+        if (width < 768) {
+            $('div.sidebar-collapse').addClass('collapse');
+        } else {
+            $('div.sidebar-collapse').removeClass('collapse');
+        }
     };
 
-    app.module.controller("navbarController", NavbarController);
+    app.module.directive("ttNavbar", NavbarDirective);
 })();
