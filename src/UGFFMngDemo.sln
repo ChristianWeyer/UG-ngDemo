@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularDemo", "ngDemo\AngularDemo.csproj", "{F145A26C-70D0-4330-90D8-19CF1892BBFF}"
 EndProject
@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{29EFCA
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleClient", "ConsoleClient\ConsoleClient.csproj", "{1643DF2B-FB89-4BF6-8757-14F475CABDCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "Contracts\Contracts.csproj", "{8B3CD134-01C9-4C9F-8066-578FE3FC7C0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,6 +26,14 @@ Global
 		{F145A26C-70D0-4330-90D8-19CF1892BBFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F145A26C-70D0-4330-90D8-19CF1892BBFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F145A26C-70D0-4330-90D8-19CF1892BBFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1643DF2B-FB89-4BF6-8757-14F475CABDCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1643DF2B-FB89-4BF6-8757-14F475CABDCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1643DF2B-FB89-4BF6-8757-14F475CABDCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1643DF2B-FB89-4BF6-8757-14F475CABDCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B3CD134-01C9-4C9F-8066-578FE3FC7C0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B3CD134-01C9-4C9F-8066-578FE3FC7C0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B3CD134-01C9-4C9F-8066-578FE3FC7C0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B3CD134-01C9-4C9F-8066-578FE3FC7C0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

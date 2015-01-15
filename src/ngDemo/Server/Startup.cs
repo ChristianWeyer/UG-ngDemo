@@ -13,7 +13,7 @@ namespace AngularDemo
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
             var config = new HttpConfiguration();
-            config.Routes.MapHttpRoute("DefaultApi", "api/{controller}");
+            config.Routes.MapHttpRoute("DefaultApi", "api/{controller}/{action}");
             config.Formatters.Clear();
             config.Formatters.Add(new JsonMediaTypeFormatter());
 
