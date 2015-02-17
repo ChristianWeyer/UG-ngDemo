@@ -6,7 +6,8 @@ namespace ConsoleClient
     {
         static void Main(string[] args)
         {
-            var client = WebApiProxyFactory.CreateProxyFor<IProductsApi>("http://windows8vm/ngdemo/api/products");
+            var client = WebApiProxyFactory.CreateProxyFor<IProductsApi>(
+                "http://windows8vm/angulardemo/api/products/");
 
             var products = client.GetProducts();
 
